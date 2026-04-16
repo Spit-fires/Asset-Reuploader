@@ -38,7 +38,7 @@ func animationRateLimitBackoff(try int) time.Duration {
 	if try > animationUploadRateLimitMaxPower {
 		try = animationUploadRateLimitMaxPower
 	}
-	return time.Second * time.Duration(1<<(try-1))
+	return time.Minute * time.Duration(1<<(try-1))
 }
 
 func MoveValueToTop[T comparable](arr *atomicarray.AtomicArray[T], value T) {
