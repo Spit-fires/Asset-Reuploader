@@ -83,7 +83,7 @@ func ensureAPIKey() {
 	fmt.Println("How to get one:")
 	fmt.Println("1. Go to https://create.roblox.com/dashboard/credentials?activeTab=ApiKeysTab")
 	fmt.Println("2. Click Create API Key")
-	fmt.Println("3. Put any name")
+	fmt.Println("3. Enter any name")
 	fmt.Println("4. Select Assets in Select API System")
 	fmt.Println("5. Select Write in each Assets permission")
 	key, err := console.Input("API key (leave blank to skip): ")
